@@ -1,0 +1,7 @@
+streamlit
+opencv-python-headless
+pillow
+pytesseract
+pdf2image
+scikit-learn
+matplotlib
