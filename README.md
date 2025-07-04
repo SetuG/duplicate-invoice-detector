@@ -7,12 +7,12 @@ This is a simple Streamlit web app that detects duplicate invoices using OCR and
 3) Displays similarity score and visual match.
 
 ### Technologies Used
-Python
-Streamlit
-OpenCV
-Tesseract OCR
-scikit-learn
-SQLite
+(Python, 
+Streamlit,
+OpenCV,
+Tesseract OCR,
+scikit-learn,
+SQLite)
 
 
 It finds the similarity on basis of these things.
