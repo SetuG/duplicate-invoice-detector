@@ -2,9 +2,9 @@
 This is a simple Streamlit web app that detects duplicate invoices using OCR and image processing. It supports PDF, PNG, JPG, and JPEG formats. The app checks for similarity based on extracted text, image hashes, and histogram comparisons.
 
 ### Features
-1)Upload and store invoice files in a local SQLite database.
-2)Check for duplicates based on file content and appearance.
-3)Displays similarity score and visual match.
+1) Upload and store invoice files in a local SQLite database.
+2) Check for duplicates based on file content and appearance.
+3) Displays similarity score and visual match.
 
 ### Technologies Used
 Python
