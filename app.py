@@ -159,11 +159,11 @@ class InvoiceDuplicateDetector:
         return True, results
 
 st.set_page_config(page_title="Invoice Duplicate Detector", layout="wide")
-st.title("📄 Duplicate Invoice Detector")
+st.title(" Duplicate Invoice Detector")
 
 detector = InvoiceDuplicateDetector()
 
-st.header("1️⃣ Upload and Store Invoices")
+st.header("1) Upload and Store Invoices")
 uploaded_files = st.file_uploader("Upload invoice files (PDF, PNG, JPG, JPEG)", accept_multiple_files=True, type=['pdf', 'png', 'jpg', 'jpeg'])
 
 if uploaded_files:
@@ -171,7 +171,7 @@ if uploaded_files:
         success, msg = detector.store_invoice(f, f.name)
         st.success(f"{f.name}: {msg}" if success else f"{f.name}: {msg}")
 
-st.header("2️⃣ Check for Duplicate")
+st.header("2️) Check for Duplicate")
 check_file = st.file_uploader("Upload a file to check for duplicates", key="check", type=['pdf', 'png', 'jpg', 'jpeg'])
 
 if check_file:
@@ -179,9 +179,9 @@ if check_file:
     if not ok:
         st.error(result)
     elif not result:
-        st.info("✅ No duplicates found!")
+        st.info(" No duplicates found!")
     else:
-        st.warning("⚠️ Possible duplicates found:")
+        st.warning("--> Possible duplicates found:")
         for fname, score, stored_img in result:
             st.write(f"🔁 **{fname}** — Similarity: `{score:.2f}`")
             col1, col2 = st.columns(2)
