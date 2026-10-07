@@ -19,3 +19,7 @@ It finds the similarity on basis of these things.
 1) File Hashing (MD5): Used to detect exact file duplicates by generating a unique hash for each file.
 2) OCR (Optical Character Recognition): Extracts text from invoice images to compare structural and content similarities.
 3) Text Similarity: Compares the extracted text to find partial or near-duplicate invoices.
+
+
+Check the working deployed application here:
+https://duplicate-invoice-detector.onrender.com
